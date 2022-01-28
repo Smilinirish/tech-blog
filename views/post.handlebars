@@ -1,13 +1,13 @@
 {{#if owner}}
   <div
-    class="input-group row mb-12 post position-relative border border-5 border-dark rounded mt-2 mb-2"
+    class="input-group row mb-12 post position-relative border border-5 border-light rounded mt-2 mb-2"
   >
-    <div class="col-md-12 d-flex bg-dark text-white position-relative">
-      <h2 class="d-flex flex-row bg-dark text-white position-relative">
+    <div class="col-md-12 d-flex bg-light text-black position-relative">
+      <h2 class="d-flex flex-row bg-light text-black position-relative">
         <div class="input-group">
           <div class="input-group-prepend">
             <span
-              class="input-group-text bg-dark text-primary"
+              class="input-group-text bg-light text-primary"
               style="border: none;"
             ><b>Title</b></span>
           </div>
@@ -20,7 +20,7 @@
           </div>
           <input
             type="text"
-            class="bg-dark text-primary"
+            class="bg-light text-primary"
             id="title"
             value="{{name}}"
           />
@@ -34,12 +34,12 @@
     <div class="col-md-10">
       <div class="input-group">
         <span
-          class="input-group-text bg-secondary text-light fs-4"
+          class="input-group-text bg-primary text-light fs-4"
           style="border: none;"
         >Post</span>
         <textarea
           id="post"
-          class="form-control bg-secondary text-light"
+          class="form-control bg-primary text-light"
           rows="5"
           aria-label="With textarea"
         >{{description}}</textarea>
@@ -59,16 +59,16 @@
   </div>
 {{else}}
   <div
-    class="row mb-12 post position-relative border border-5 border-dark rounded mt-2 mb-2"
+    class="row mb-12 post position-relative border border-5 border-light rounded mt-2 mb-2"
   >
-    <div class="col-md-12 d-flex bg-dark text-white position-relative">
-      <h2 class="d-flex flex-row bg-dark text-white position-relative">
+    <div class="col-md-12 d-flex bg-light text-black position-relative">
+      <h2 class="d-flex flex-row bg-light text-black position-relative">
         <span
           class="input-group-text"
           style="display:none;"
           id="id"
         >{{id}}</span>
-        <p><h2 class="bg-dark text-primary">{{name}}</h2></p>
+        <p><h2 class="bg-light text-primary">{{name}}</h2></p>
       </h2>
       <p
         class="d-flex float-md-right pull-right position-relative ml-auto"
@@ -83,17 +83,17 @@
   </div>
 {{/if}}
 <div
-  class="row mb-12 post position-relative border border-5 border-dark rounded mt-2 mb-2"
+  class="row mb-12 post position-relative border border-5 border-light rounded mt-2 mb-2"
 >
-  <div class="col-md-12 d-flex bg-dark text-white position-relative">
-    <h2 class="d-flex flex-row bg-dark text-white position-relative">
+  <div class="col-md-12 d-flex bg-light text-black position-relative">
+    <h2 class="d-flex flex-row bg-light text-black position-relative">
       <p>Comments</p>
     </h2>
   </div>
 </div>
 {{#each comments as |comment|}}
   <div
-    class="row mb-12 post position-relative border border-5 border-dark rounded mt-2 mb-2"
+    class="row mb-12 post position-relative border border-5 border-light rounded mt-2 mb-2"
   >
     <div class="col-md-7">
       <p class="fs-5 text-light">
@@ -105,10 +105,10 @@
   </div>
 {{/each}}
 <div
-  class="row mb-12 post position-relative border border-5 border-dark rounded mt-2 mb-2"
+  class="row mb-12 post position-relative border border-5 border-light rounded mt-2 mb-2"
 >
-  <div class="col-md-12 d-flex bg-dark text-white position-relative">
-    <h2 class="d-flex flex-row bg-dark text-white position-relative">
+  <div class="col-md-12 d-flex bg-light text-black position-relative">
+    <h2 class="d-flex flex-row bg-light text-black position-relative">
       <p>New Comment</p>
     </h2>
   </div>
