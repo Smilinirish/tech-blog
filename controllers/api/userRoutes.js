@@ -2,7 +2,7 @@ const router = require("express").Router();
 const { User } = require("../../models");
 const withAuth = require("../../util/auth");
 
-router.post("/", withAuth, async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const userData = await User.create(req.body);
 
@@ -20,9 +20,9 @@ router.post("/", withAuth, async (req, res) => {
 router.post("/login", async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
-
+  
     if (!userData) {
-      res.status(400).json({ message: 'Email/password is incorrect' });
+      res.status(400).json({ message: 'no account with that email' });
       return;
     }
 
